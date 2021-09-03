@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@font-face {
+  font-family: EB_Garamond;
+  src: url(/dist/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf) format("truetype");
+  }
+/* @font-face {
+  font-family: fars;
+  src: url(/dist/fonts/EB_Garamond/EBGaramond-VariableFont_wght.ttf) format("truetype");
+  } */
+  
+@layer base {
+  h1 {
+    @apply text-5xl font-headline text-mainColor;
+  }
+  h2 {
+    @apply text-3xl font-headline text-mainColor;
+  }
+  h3 {
+    @apply text-2xl font-headline text-mainColor;
+  },p{
+    @apply  text-lg
+  }
+}
